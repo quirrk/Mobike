@@ -20,10 +20,10 @@
             <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
         </div> 
         <ul>
-            <li><a href="#"><b>Inicio</b></a></li>
-            <li><a href="#"><b>Arrendar Mobike</b></a></li>
-            <li><a href="#"><b>¿Quiénes Somos?</b></a></li>
-            <h3 class="logo-desp"> <a href="index.html"> Mis Perris <span>&copy;</span> </a> </h3>
+            <li><a href="{% url 'inicio' %}"><b>Inicio</b></a></li>
+            <li><a href="{% url 'arrendar' %}"><b>Arrendar Mobike</b></a></li>
+            <li><a href="{% url 'conocenos' %}"><b>¿Quiénes Somos?</b></a></li>
+            <h3 class="logo-desp"> <a href="{% url 'inicio' %}"> Mis Perris <span>&copy;</span> </a> </h3>
         </ul>
     </nav>       
     
