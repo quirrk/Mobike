@@ -80,6 +80,10 @@ main{
     text-align: center;
 }
 
+#main-pic-wall{
+    width: 100%;
+}
+
 .text{
     max-width: 1000px;
     margin-left: auto;
@@ -133,6 +137,9 @@ footer h4{
     color: rgb(148, 148, 148);
 }
 
+.active{
+    display: block;
+}
 
 @media screen and (max-width: 768px){
     header{
@@ -152,7 +159,7 @@ footer h4{
         margin: 0 auto 20px auto;
     }
     nav{
-        background: rgb(59, 179, 194);
+        background: rgba(255, 69, 17, 0.849);
         position: fixed;
         top: 0;
     }
@@ -172,9 +179,7 @@ footer h4{
     nav ul li a {
         color: white;
     }
-    .active{
-        display: block;
-    }
+    
     .menu{
         border: none;
         background: none;
