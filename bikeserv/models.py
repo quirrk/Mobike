@@ -11,7 +11,7 @@ class Persona (models.Model):
         ('Providencia','Providencia'),
         ('Ñuñoa','Ñuñoa'),
     )
-    comuna = models.CharField(max_length=2, choices=comuna_opc)
+    comuna = models.CharField(max_length=20, choices=comuna_opc)
     cred = models.IntegerField()
     def __str__(self):
         return self.nombres
