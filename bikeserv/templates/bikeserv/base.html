@@ -18,18 +18,18 @@
     <nav>
         <div class="toggle">
             <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+           <a href="{% url 'inicio' %}"><img src="{% static 'img/logo-mobike.png' %}" alt="logo-mobike" class="toggle-logo"/></a> 
         </div> 
         <ul>
             <li><a href="{% url 'inicio' %}"><b>Inicio</b></a></li>
             <li><a href="{% url 'arrendar' %}"><b>Arrendar Mobike</b></a></li>
             <li><a href="{% url 'conocenos' %}"><b>¿Quiénes Somos?</b></a></li>
-            <h3 class="logo-desp"> <a href="{% url 'inicio' %}"> Mobike <span>&copy;</span> </a> </h3>
         </ul>
     </nav>       
     
     <main>
         <div class="background">
-            <img src="{% static 'img/personas-bici.jpg' %}" alt="personas en personas-bici" id="main-pic-wall">
+           
         </div>
                 
         {% block content %}
