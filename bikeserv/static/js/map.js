@@ -39,7 +39,3 @@
 		content.innerHTML = "Su navegador no soporta la API de geolocalización.";
 	}
 })();
-
-function Arrendar(){
-	
-}

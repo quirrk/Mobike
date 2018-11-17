@@ -189,11 +189,43 @@ footer h4{
 
 .arriendo{
     text-align: left;
-    padding: 15px;
+    padding: 16px;
+    float: left;
+    border-top: 35px solid rgb(255, 70, 17);
+    width: 40%;
+}
+
+.arriendo h4{
+    text-align: center;
+    margin-top: -45px;
+    color: white;
+}
+
+.arri-cont{
+    text-align: center;
+    visibility: hidden;
+}
+
+.none{
+    visibility: visible;
+}
+
+.arri-cont button{
+    background-color: rgb(255,70,17);
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid  rgb(218, 62, 19);
+}
+
+
+
+.arri-cont button:hover{
+    background-color:  rgb(153, 44, 14);
 }
 
 .map-cont{
-    width: auto;
+    width: 100%;
     text-align: right;
 }
 .map-cont button{
@@ -202,6 +234,7 @@ footer h4{
     z-index: 98;
     margin: 150px 400px;
     background-color: rgba(240, 248, 255, 0);
+    border: none;
 }
 @media screen and (max-width: 1000px){
     .background{
@@ -213,6 +246,15 @@ footer h4{
     header{
         display: none;
     }
+
+    .arriendo{
+        width: 100%;
+    }
+
+    .map-cont button{
+        margin: 300px 400px;
+    }
+
 
     .map-cont{
         text-align:center;
