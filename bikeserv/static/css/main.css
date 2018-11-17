@@ -144,7 +144,7 @@ main{
 }
 .div_2 div{
     float: right;
-    color: rgb(80, 80, 80);
+    color: rgb(0, 0, 0);
     max-width: 600px;
     padding-right: 50px;
     text-align: left;
@@ -236,6 +236,50 @@ footer h4{
     background-color: rgba(240, 248, 255, 0);
     border: none;
 }
+
+.quienes{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.quienes p{
+    text-align: justify;
+}
+
+.somos-mo{
+    background-image: url('../img/somos-mo.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.somos-cont{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 24, 10, 0.521);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-top:200px; 
+}
+
+.somos-cont h1{
+    font-size: 60px;
+}
+
+.somos-2{
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/somos-2.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
 @media screen and (max-width: 1000px){
     .background{
         height: 400px;
@@ -245,6 +289,26 @@ footer h4{
 @media screen and (max-width: 768px){
     header{
         display: none;
+    }
+
+    .somos-2{
+        height: 400px;
+    }
+
+    .somos-mo{
+        height: 300px;
+    }
+
+    .somos-cont{
+        padding-top:90px; 
+    }
+
+    .somos-cont h1{
+        font-size: 35px;
+    }
+
+    .div_2 div{
+        color: white;
     }
 
     .arriendo{
