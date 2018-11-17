@@ -1,13 +1,14 @@
 {% extends 'bikeserv/base.html'%}
 {% load static %}
 
-{% block extrastatic %}
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-{% endblock %}
 
 {% block content %}
     <main>
-        <div id='map' style='width: 300px; height: 300px; margin: auto;'></div>
+        <div class="arriendo" id="Arriendo">
+        </div>
+        <div class="map-cont">
+           <button onclick="Arrendar()"> <img src="{% static 'img/icon-bici.png' %}" alt="icon-bici"> </button> 
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13315.05668639828!2d-70.59810911218841!3d-33.455450117306476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfa637b66283%3A0x3d9ef28f7ff29199!2sEstacionamiento+MOBIKE!5e0!3m2!1ses-419!2scl!4v1542425322119" width="60%" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
     </main>
 {% endblock %}

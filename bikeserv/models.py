@@ -18,5 +18,5 @@ class Persona (models.Model):
 
 class Bicicleta (models.Model):
     cod = models.IntegerField()
-    def __str__(self):
+    def __int__(self):
         return self.cod

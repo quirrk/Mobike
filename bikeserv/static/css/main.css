@@ -187,6 +187,22 @@ footer h4{
     display: block;
 }
 
+.arriendo{
+    text-align: left;
+    padding: 15px;
+}
+
+.map-cont{
+    width: auto;
+    text-align: right;
+}
+.map-cont button{
+    width: 40px;
+    position: absolute;
+    z-index: 98;
+    margin: 150px 400px;
+    background-color: rgba(240, 248, 255, 0);
+}
 @media screen and (max-width: 1000px){
     .background{
         height: 400px;
@@ -198,6 +214,12 @@ footer h4{
         display: none;
     }
 
+    .map-cont{
+        text-align:center;
+    }
+    #map{
+        width: 90%;
+    }
     .background{
         background-position: top;
         background-size: 100%;
