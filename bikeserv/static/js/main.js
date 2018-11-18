@@ -20,6 +20,7 @@ $(document).ready(function(){
     $('.btn_arriendo').click(function(){
         $('#arri_cont').removeClass('block')
         $('.en-curso').toggleClass('block')
+        $('.icon-bici').toggleClass('none');
         var fec = document.getElementById('fecha-ini');
         var dat = new Date();
         var dia = dat.getDate();
@@ -34,6 +35,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.btn_finalizar').click(function(){
+        $('.btn_finalizar').toggleClass('none');
+        $('.btn_salir').toggleClass('visible');
         var fec_ter = document.getElementById('fecha-ter');
         var dat = new Date();
         var dia = dat.getDate();
@@ -46,3 +49,13 @@ $(document).ready(function(){
     })
 })
 
+$(document).ready(function(){
+    $('.btn_salir').click(function(){
+        var fec = document.getElementById('fecha-ini');
+        var fec_ter = document.getElementById('fecha-ter');
+        $('.icon-bici').removeClass('none');
+        $('.en-curso').removeClass('block');
+        fec.innerText = "";
+        fec_ter.innerText = "";
+    })
+})

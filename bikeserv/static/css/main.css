@@ -297,10 +297,22 @@ footer h4{
 
 }
 
+.btn_salir{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
 @media screen and (max-width: 1000px){
     .background{
         height: 400px;
     }
+}
+
+.none{
+    display: none;
 }
 
 @media screen and (max-width: 768px){
