@@ -10,3 +10,4 @@ def quienessomos(request):
 @login_required
 def arrendar(request):
     return render(request,'bikeserv/arrendar.html', {})
+
