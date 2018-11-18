@@ -25,9 +25,9 @@
             <li><a href="{% url 'conocenos' %}"><b>¿Quiénes Somos?</b></a></li>
             <li><a href="{% url 'arrendar' %}"><b>Arrendar Mobike</b></a></li>
             {% if user.is_authenticated %}
-            <li class="btn"><a href=""><b>Iniciar Sesión</b></a></li>
+            <li class="btn"><a href="{% url 'logout' %}"><b>Cerrar Sesión</b></a></li>
             {% else %}
-            <li class="btn"><a href=""><b>Cerrar Sesión</b></a></li>
+            <li class="btn"><a href="{% url 'login' %}"><b>Iniciar Sesión</b></a></li>
             {% endif %}
         </ul>
     </nav>       
