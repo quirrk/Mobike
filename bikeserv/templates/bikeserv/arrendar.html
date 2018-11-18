@@ -5,12 +5,25 @@
 {% block content %}
         <div class="arriendo" id="Arriendo">
            <h4>Información de arriendo</h4>
-            <div class="arri-cont" id="arri_cont"> <label for="">ID Bicicleta: 1232456</label>
+            <div class="arri-cont" id="arri_cont">
+                <label for="">ID Bicicleta: 1232456</label>
                 <br/> <br/>
                 <label for="">Ubicación: Lorem Ipsum 987</label>
                 <br/> <br/>
                 <button class="btn_arriendo">Arrendar</button>
                 <button class="btn_cancelar">Cancelar</button>
+            </div>
+
+            <div class="en-curso">
+                <label>ID Bicicleta: 1232456</label>
+                <br/> <br/>
+                <label>Ubicación: Lorem Ipsum 987</label>
+                <br/> <br/>
+                <label id="fecha-ini"></label>
+                <br/> <br/>
+                <label id="fecha-ter"></label>
+                <br/> <br/>
+                <button class="btn_finalizar">Finalizar Carrera</button>
             </div>
         </div>
         <div class="map-cont">

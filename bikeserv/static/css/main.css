@@ -202,13 +202,18 @@ footer h4{
     color: white;
 }
 
-.arri-cont{
+.arri-cont {
     text-align: center;
-    visibility: hidden;
+    display: none;
 }
 
-.none{
-    visibility: visible;
+.en-curso{
+    text-align: center;
+    display: none;
+}
+
+.block{
+    display: block;
 }
 
 .arri-cont button{
@@ -219,6 +224,17 @@ footer h4{
     border: 1px solid  rgb(218, 62, 19);
 }
 
+.en-curso button{
+    background-color: rgb(255,70,17);
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid  rgb(218, 62, 19);
+}
+
+.en-curso button:hover{
+    background-color:  rgb(153, 44, 14);
+}
 
 
 .arri-cont button:hover{

@@ -6,12 +6,43 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.icon-bici').click(function(){
-        $('#arri_cont').toggleClass('none')
+        $('#arri_cont').toggleClass('block')
     })
 })
 
 $(document).ready(function(){
     $('.btn_cancelar').click(function(){
-        $('#arri_cont').removeClass('none')
+        $('#arri_cont').removeClass('block')
     })
 })
+
+$(document).ready(function(){
+    $('.btn_arriendo').click(function(){
+        $('#arri_cont').removeClass('block')
+        $('.en-curso').toggleClass('block')
+        var fec = document.getElementById('fecha-ini');
+        var dat = new Date();
+        var dia = dat.getDate();
+        var mes = dat.getMonth()+1;
+        var año = dat.getFullYear();
+        var hora = dat.getHours();
+        var min = dat.getMinutes();
+        var sec = dat.getSeconds();
+        fec.innerText="Fecha Inicio: "+dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
+    })
+})
+
+$(document).ready(function(){
+    $('.btn_finalizar').click(function(){
+        var fec_ter = document.getElementById('fecha-ter');
+        var dat = new Date();
+        var dia = dat.getDate();
+        var mes = dat.getMonth()+1;
+        var año = dat.getFullYear();
+        var hora = dat.getHours();
+        var min = dat.getMinutes();
+        var sec = dat.getSeconds();
+        fec_ter.innerText="Fecha Termino: "+dia+"/"+mes+"/"+año+" - "+hora+":"+min+":"+sec;
+    })
+})
+
