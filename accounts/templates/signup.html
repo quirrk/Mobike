@@ -1,10 +1,19 @@
 {% extends 'bikeserv/base.html'%}
+{% load static %}
+
+{% block extrastatic %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock %}
 
 {% block content %}
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign up</button>
-  </form>
+
+<div class="div_registro">
+    <h2>Registrarse</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button id="btn_signup" type="submit">Confirmar</button>
+    </form>
+</div>
+  
 {% endblock %}
