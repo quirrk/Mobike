@@ -55,6 +55,8 @@ $(document).ready(function(){
         var fec_ter = document.getElementById('fecha-ter');
         $('.icon-bici').removeClass('none');
         $('.en-curso').removeClass('block');
+        $('.btn_finalizar').removeClass('none');
+        $('.btn_salir').removeClass('visible');
         fec.innerText = "";
         fec_ter.innerText = "";
     })
