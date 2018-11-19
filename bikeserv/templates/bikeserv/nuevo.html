@@ -1,9 +1,17 @@
 {% extends 'bikeserv/base.html'%}
+{% load static %}
+{% block extrastatic %}
+<link rel="stylesheet" href="{% static 'css/nuevo.css'%}">
+{%endblock%}
 
 {% block content %}
-    <h1>Datos Usuario</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Guardar</button>
-    </form>
+
+    <div class="div_nuevo">
+        <h2>Datos Usuario</h2>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn-default">Crear Cuenta</button>
+        </form>
+    </div>
+    
 {% endblock %}
